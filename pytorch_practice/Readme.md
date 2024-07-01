@@ -2102,7 +2102,7 @@ torch.save(model.state_dict(), 'model/path/weight.pth')
 ```
 
 #### Loading the model
-
+To load the model, first create the instance of the model with the same arcitecture as the saved model. Then we can load the parameters and weights of the saved model into our newly created dummy model.
 
 ```python
 model.load_state_dict(torch.load('model/path/weight.pth'))
